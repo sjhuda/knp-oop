@@ -122,5 +122,4 @@ class Ship
   public function getType() {
     return 'Empire';
   }
-
 }
