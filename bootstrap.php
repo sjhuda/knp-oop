@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/lib/Service/AbstractShipStorage.php';
+require_once __DIR__ . '/lib/Service/ShipStorageInterface.php';
 require_once __DIR__ . '/lib/Service/PdoShipStorage.php';
 require_once __DIR__ . '/lib/Service/JsonFileShipStorage.php';
 require_once __DIR__ . '/lib/Model/AbstractShip.php';
