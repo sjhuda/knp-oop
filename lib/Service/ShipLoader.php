@@ -48,10 +48,10 @@ class ShipLoader
     }
     else {
       $ship = new Ship($shipData['name']);
+      $ship->setJediFactor($shipData['jedi_factor']);
     }
     $ship->setId($shipData['id']);
     $ship->setWeaponPower($shipData['weapon_power']);
-    $ship->setJediFactor($shipData['jedi_factor']);
     $ship->setStrength($shipData['strength']);
 
     return $ship;
