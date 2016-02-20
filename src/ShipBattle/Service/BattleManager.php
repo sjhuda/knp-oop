@@ -2,12 +2,20 @@
 
 namespace ShipBattle\Service;
 
+use ShipBattle\Model\AbstractShip;
+use ShipBattle\Model\BattleResult;
+
 class BattleManager
 {
   /**
    * Our complex fighting algorithm!
    *
+   * @param AbstractShip $ship1
+   * @param $ship1Quantity
+   * @param AbstractShip $ship2
+   * @param $ship2Quantity
    * @return BattleResult
+   * @throws \ShipBattle\Model\Exception
    */
   public function battle(AbstractShip $ship1, $ship1Quantity, AbstractShip $ship2, $ship2Quantity) {
     $ship1Health = $ship1->getStrength() * $ship1Quantity;
