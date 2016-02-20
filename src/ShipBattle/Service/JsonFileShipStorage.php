@@ -1,5 +1,7 @@
 <?php
 
+namespace ShipBattle\Service;
+
 class JsonFileShipStorage implements ShipStorageInterface
 {
     private $filename;
@@ -12,7 +14,6 @@ class JsonFileShipStorage implements ShipStorageInterface
     public function fetchAllShipsData()
     {
         $jsonContents = file_get_contents($this->filename);
-
         return json_decode($jsonContents, true);
     }
 

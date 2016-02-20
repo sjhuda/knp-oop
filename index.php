@@ -1,5 +1,6 @@
 <?php
 
+use ShipBattle\Model\BrokenShip;
 use ShipBattle\Service\Container;
 
 require __DIR__ . '/bootstrap.php';

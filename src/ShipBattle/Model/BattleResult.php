@@ -1,5 +1,7 @@
 <?php
 
+namespace ShipBattle\Model;
+
 class BattleResult
 {
   private $usedJediPowers;

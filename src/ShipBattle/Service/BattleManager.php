@@ -1,5 +1,7 @@
 <?php
 
+namespace ShipBattle\Service;
+
 class BattleManager
 {
   /**

@@ -1,5 +1,7 @@
 <?php
 
+namespace ShipBattle\Model;
+
 class BrokenShip extends AbstractShip
 {
   public function getJediFactor()

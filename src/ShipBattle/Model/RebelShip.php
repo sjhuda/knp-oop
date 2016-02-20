@@ -1,5 +1,7 @@
 <?php
 
+namespace ShipBattle\Model;
+
 class RebelShip extends AbstractShip
 {
   public function getType()

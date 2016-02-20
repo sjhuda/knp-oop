@@ -1,5 +1,10 @@
 <?php
 
+namespace ShipBattle\Service;
+
+use ShipBattle\Model\RebelShip;
+use ShipBattle\Model\Ship;
+
 class ShipLoader
 {
   private $shipStorage;

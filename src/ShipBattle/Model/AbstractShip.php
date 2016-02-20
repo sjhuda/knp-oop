@@ -1,5 +1,7 @@
 <?php
 
+namespace ShipBattle\Model;
+
 abstract class AbstractShip
 {
   private $id;
