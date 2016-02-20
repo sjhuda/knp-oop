@@ -1,6 +1,5 @@
 <?php
 
-use ShipBattle\Model\BrokenShip;
 use ShipBattle\Service\Container;
 
 require __DIR__ . '/bootstrap.php';
@@ -8,8 +7,6 @@ require __DIR__ . '/bootstrap.php';
 $container = new Container($configuration);
 $shipLoader = $container->getShipLoader();
 $ships = $shipLoader->getShips();
-
-$ships[] = new BrokenShip("Broken");
 
 $errorMessage = '';
 if (isset($_GET['error'])) {
