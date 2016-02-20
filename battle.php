@@ -1,8 +1,11 @@
 <?php
+
+use ShipBattle\Service\Container;
+
 require __DIR__ . '/bootstrap.php';
 
 $container = new Container($configuration);
-$shipLoader = $container->getShipLoader() ;;
+$shipLoader = $container->getShipLoader();
 $ships = $shipLoader->getShips();
 
 $ship1Id = isset($_POST['ship1_id']) ? $_POST['ship1_id'] : NULL;
