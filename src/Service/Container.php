@@ -2,6 +2,8 @@
 
 namespace ShipBattle\Service;
 
+use PDO;
+
 class Container
 {
     private $configuration;
@@ -49,7 +51,7 @@ class Container
     {
         if ($this->shipStorage === null) {
             //$this->shipStorage = new PdoShipStorage($this->getPDO());
-            $this->shipStorage = new JsonFileShipStorage(__DIR__ . '/../../../resources/ships.json');
+            $this->shipStorage = new JsonFileShipStorage(__DIR__ . '/../../resources/ships.json');
         }
         return $this->shipStorage;
     }
